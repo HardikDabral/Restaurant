@@ -40,7 +40,7 @@ const HomePage = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="border-white text-white hover:bg-white/10"
+                className="border-white text-white hover:bg-white/10 hover:text-white"
                 size="lg"
                 asChild
               >

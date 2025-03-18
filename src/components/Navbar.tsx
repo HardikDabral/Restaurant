@@ -90,7 +90,9 @@ const Navbar: React.FC<NavbarProps> = ({ transparent = false }) => {
           {/* Mobile Navigation Button */}
           <div className="flex items-center md:hidden space-x-4">
             <ThemeToggle />
-            <Button variant="ghost" size="icon" onClick={toggleMenu} className={`text-foreground`}>
+            <Button variant="ghost" size="icon" onClick={toggleMenu} className={`${
+              scrolled || !transparent ? 'text-foreground' : 'text-white'
+            }`}>
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
